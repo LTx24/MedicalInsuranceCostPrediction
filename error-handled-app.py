@@ -2,14 +2,9 @@ import streamlit as st
 import os
 import sys
 import traceback
-
+import joblib
 # Add error handling for imports
-try:
-    import joblib
-except ImportError:
-    st.error("Failed to import joblib. Please check if it's installed correctly.")
-    st.code("pip install joblib")
-    sys.exit(1)
+
 
 @st.cache_resource
 def load_model():

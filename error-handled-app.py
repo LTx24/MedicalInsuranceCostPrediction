@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import sys
 import traceback
-pip install joblib
+import joblib
 # Add error handling for imports
 
 
